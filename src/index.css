@@ -1,1 +1,40 @@
 @import "tailwindcss";
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #cfd8dc;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b0bec5;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #90a4ae;
+}
+
+table td {
+  vertical-align: top;
+}
+
+#receipt-content {
+  max-height: 70vh;
+}
+
+@media print {
+  .hide-print {
+    display: none !important;
+  }
+  .print-area {
+    display: block;
+  }
+}
